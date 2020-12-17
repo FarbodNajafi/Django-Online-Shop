@@ -1,0 +1,25 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>{% block title %}My Shop {% endblock %}</title>
+    <link css href="{% static " rel="stylesheet"
+    /base.css" %}">
+</head>
+<body>
+<div id="id"><a href="{% url " shop:product_list" %}" class="logo">My Shop</a></div>
+<div id="subheader">
+    <div class="cart">
+        Your cart is empty.
+    </div>
+</div>
+<div id="content">
+    {% block content %}
+    {% endblock %}
+</div>
+</body>
+</html>
