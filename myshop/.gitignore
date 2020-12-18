@@ -110,7 +110,7 @@ celerybeat.pid
 .env
 .venv
 env/
-venv/
+/venv/
 ENV/
 env.bak/
 venv.bak/
@@ -142,4 +142,4 @@ cython_debug/
 # Jetbrains
 .idea/
 
-myshop/media/
+media/
