@@ -22,13 +22,13 @@ def order_create(request):
             cart.clear()
 
             return render(request,
-                          'orders/order/create.html',
+                          'orders/order/created.html',
                           {'order': order})
 
-        else:
-            form = OrderCreateForm()
+    else:
+        form = OrderCreateForm()
 
-        return render(request,
-                      'orders/order/create.html',
-                      {'cart': cart,
-                       'from': form})
+    return render(request,
+                  'orders/order/create.html',
+                  {'cart': cart,
+                   'form': form})
