@@ -128,3 +128,6 @@ SESSION_COOKIE_SECURE = False
 SESSION_EXPIRE_AT_BROWSER_CLOSE = False
 
 CART_SESSION_ID = 'cart'
+
+# Email
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
