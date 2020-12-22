@@ -139,11 +139,14 @@ CART_SESSION_ID = 'cart'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # Braintree
-
-
 BRAINTREE_CONF = braintree.Configuration(
     braintree.Environment.Sandbox,
     secrets.BRAINTREE_MERCHANT_ID,
     secrets.BRAINTREE_PUBLIC_KEY,
     secrets.BRAINTREE_PRIVATE_KEY
 )
+
+# Redis
+REDIS_HOST = 'localhost'
+REDIS_PORT = 6379
+REDIS_DB = 1
